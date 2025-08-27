@@ -49,11 +49,65 @@ It covers ingestion, transformation, and storage of raw transaction data into a 
 
 ---
 
-## 📈 Dashboard Preview  
+# QuickSight Dashboards
 
-Here’s a sample QuickSight dashboard built from the curated data:  
+This analysis highlights three visuals that showcase the pipeline’s curated data.
 
-![QuickSight Dashboard](./images/quicksight_dashboard.png)
+---
+
+## 1) Transactions by Region
+
+**Goal:** Compare total transaction amount across regions.
+
+**QuickSight fields**
+- **X-Axis:** `region`
+- **Y-Axis (Value):** `amount (Sum)`
+- **(Optional) Color:** `transaction_type`
+
+**Screenshot**
+![Transactions by Region](../images/quicksight_region.png)
+
+---
+
+## 2) High-Value vs Low-Value Transactions
+
+**Goal:** See how much volume comes from high-value transactions.
+
+**QuickSight fields**
+- **X-Axis:** `is_high_value` (0 = low, 1 = high)
+- **Y-Axis (Value):** `amount (Sum)`
+- **(Optional) Color:** `region`
+
+**Screenshot**
+![High Value vs Low Value](../images/quicksight_highvalue.png)
+
+---
+
+## 3) Monthly Transaction Trend
+
+**Goal:** Trend of total amount over time.
+
+**QuickSight fields**
+- **X-Axis:** `txn_date` → set **Granularity: Month**
+- **Y-Axis (Value):** `amount (Sum)`
+- **(Optional) Color:** `region`
+
+**Screenshot**
+![Monthly Trend](../images/quicksight_trend.png)
+
+---
+
+## How to export screenshots
+
+1. In QuickSight, open the visual → click the **…** on the top-right of the visual.
+2. Use your OS screenshot tool (macOS: `Shift + Cmd + 4`) to capture the chart.
+3. Save as **PNG** and upload to this repo under `images/` with names:
+   - `quicksight_region.png`
+   - `quicksight_highvalue.png`
+   - `quicksight_trend.png`
+
+> After uploading, the images above will render automatically in this page.
+
 
 ---
 
