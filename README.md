@@ -97,20 +97,6 @@ This analysis highlights three visuals that showcase insights from the pipeline�
 
 ---
 
-## 🖼️ How to Export Screenshots
-
-1. In QuickSight, open the visual → click the **…** menu (top-right).  
-2. Use your OS screenshot tool (macOS: `Shift + Cmd + 4`) to capture the chart.  
-3. Save the image as **PNG**.  
-4. Upload into this repo under the `images/` folder with names:  
-   - `quicksight_region.png`  
-   - `quicksight_highvalue.png`  
-   - `quicksight_trend.png`
-
-Once uploaded, the images will render automatically in this README. ✅
-
----
-
 ## 🚀 Future Enhancements
 
 - Add **Kafka / MSK** for real-time transaction streaming.  
