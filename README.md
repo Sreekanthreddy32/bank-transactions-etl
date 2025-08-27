@@ -18,6 +18,8 @@ It covers ingestion, transformation, and storage of raw transaction data into a 
 
 - **PySpark** → Transformation logic for parsing transactions, removing duplicates, and aggregating data.
 
+- **Amazon QuickSight** → Business intelligence (BI) tool used to create dashboards and visualize processed transaction data.
+
 ---
 
 ## 📂 Project Workflow
@@ -34,6 +36,9 @@ It covers ingestion, transformation, and storage of raw transaction data into a 
    - Final cleaned and structured data stored in the **curated bucket**.  
    - Ready for reporting, analytics, or loading into Redshift/Snowflake.
 
+4. **Visualization**  
+   - QuickSight connects to curated data and generates interactive dashboards for insights.
+
 ---
 
 ## 📊 Example Use Case
@@ -41,6 +46,14 @@ It covers ingestion, transformation, and storage of raw transaction data into a 
 - Detect failed transactions.  
 - Aggregate transactions by **date / account / branch**.  
 - Build dashboards (QuickSight / Power BI) for transaction insights.  
+
+---
+
+## 📈 Dashboard Preview  
+
+Here’s a sample QuickSight dashboard built from the curated data:  
+
+![QuickSight Dashboard](./images/quicksight_dashboard.png)
 
 ---
 
@@ -56,6 +69,3 @@ It covers ingestion, transformation, and storage of raw transaction data into a 
 **Sreekanth Reddy**  
 📧 sreekanthyerramreddy@gmail.com  
 🌐 [GitHub Profile](https://github.com/sreekanthreddy32)  
-
----
-
