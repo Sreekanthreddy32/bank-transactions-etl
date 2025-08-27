@@ -41,7 +41,7 @@ It covers ingestion, transformation, and storage of raw transaction data into a 
 
 ---
 
-## 📊 Example Use Case
+## 📊 Example Use Cases
 
 - Detect failed transactions.  
 - Aggregate transactions by **date / account / branch**.  
@@ -49,77 +49,79 @@ It covers ingestion, transformation, and storage of raw transaction data into a 
 
 ---
 
-# QuickSight Dashboards
+# 📈 QuickSight Dashboards
 
-This analysis highlights three visuals that showcase the pipeline’s curated data.
+This analysis highlights three visuals that showcase insights from the pipeline’s curated data.
 
 ---
 
-## 1) Transactions by Region
+### 1) Transactions by Region
 
 **Goal:** Compare total transaction amount across regions.
 
 **QuickSight fields**
 - **X-Axis:** `region`
 - **Y-Axis (Value):** `amount (Sum)`
-- **(Optional) Color:** `transaction_type`
+- **Color (Optional):** `transaction_type`
 
 **Screenshot**
-![Transactions by Region](../images/quicksight_region.png)
+![Transactions by Region](images/quicksight_region.png)
 
 ---
 
-## 2) High-Value vs Low-Value Transactions
+### 2) High-Value vs Low-Value Transactions
 
-**Goal:** See how much volume comes from high-value transactions.
+**Goal:** Understand the share of high-value vs low-value transactions.
 
 **QuickSight fields**
 - **X-Axis:** `is_high_value` (0 = low, 1 = high)
 - **Y-Axis (Value):** `amount (Sum)`
-- **(Optional) Color:** `region`
+- **Color (Optional):** `region`
 
 **Screenshot**
-![High Value vs Low Value](../images/quicksight_highvalue.png)
+![High Value vs Low Value](images/quicksight_highvalue.png)
 
 ---
 
-## 3) Monthly Transaction Trend
+### 3) Monthly Transaction Trend
 
-**Goal:** Trend of total amount over time.
+**Goal:** Track how transactions change over time.
 
 **QuickSight fields**
-- **X-Axis:** `txn_date` → set **Granularity: Month**
+- **X-Axis:** `txn_date` → set **Granularity = Month**
 - **Y-Axis (Value):** `amount (Sum)`
-- **(Optional) Color:** `region`
+- **Color (Optional):** `region`
 
 **Screenshot**
-![Monthly Trend](../images/quicksight_trend.png)
+![Monthly Trend](images/quicksight_trend.png)
 
 ---
 
-## How to export screenshots
+## 🖼️ How to Export Screenshots
 
-1. In QuickSight, open the visual → click the **…** on the top-right of the visual.
-2. Use your OS screenshot tool (macOS: `Shift + Cmd + 4`) to capture the chart.
-3. Save as **PNG** and upload to this repo under `images/` with names:
-   - `quicksight_region.png`
-   - `quicksight_highvalue.png`
+1. In QuickSight, open the visual → click the **…** menu (top-right).  
+2. Use your OS screenshot tool (macOS: `Shift + Cmd + 4`) to capture the chart.  
+3. Save the image as **PNG**.  
+4. Upload into this repo under the `images/` folder with names:  
+   - `quicksight_region.png`  
+   - `quicksight_highvalue.png`  
    - `quicksight_trend.png`
 
-> After uploading, the images above will render automatically in this page.
-
+Once uploaded, the images will render automatically in this README. ✅
 
 ---
 
 ## 🚀 Future Enhancements
+
 - Add **Kafka / MSK** for real-time transaction streaming.  
 - Integrate **AWS Glue Catalog** for schema management.  
 - Use **Amazon Redshift** for analytics.  
-- Visualize with **Amazon QuickSight**.  
+- Expand **QuickSight dashboards** for advanced business KPIs.  
 
 ---
 
 ## 👨‍💻 Author
+
 **Sreekanth Reddy**  
 📧 sreekanthyerramreddy@gmail.com  
-🌐 [GitHub Profile](https://github.com/sreekanthreddy32)  
+🌐 [GitHub Profile](https://github.com/sreekanthreddy32)
