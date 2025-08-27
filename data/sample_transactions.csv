@@ -1,0 +1,11 @@
+txn_id,account_id,txn_date,txn_type,txn_amount,merchant,city
+T1001,A001,2025-08-01,debit,120.50,Amazon,Seattle
+T1002,A001,2025-08-01,credit,1500.00,Salary,Seattle
+T1003,A002,2025-08-02,debit,45.00,Starbucks,San Francisco
+T1004,A003,2025-08-02,debit,230.10,Costco,San Jose
+T1005,A002,2025-08-02,debit,12.99,Uber Eats,San Francisco
+T1006,A001,2025-08-03,debit,89.90,Target,Seattle
+T1007,A004,2025-08-03,credit,2200.00,Salary,Austin
+T1008,A004,2025-08-03,debit,300.00,BestBuy,Austin
+T1009,A003,2025-08-04,debit,19.99,Spotify,San Jose
+T1010,A002,2025-08-04,debit,15.49,Netflix,San Francisco
