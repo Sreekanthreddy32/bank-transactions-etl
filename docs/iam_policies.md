@@ -1,14 +1,11 @@
-# IAM Roles & Policies (Demo setup)
+# 🔐 IAM Policies for EMR
 
-## Roles
-- **EMR_DefaultRole** (service role)
-  - `AmazonEMRServicePolicy_v2`
-  - `AmazonEC2FullAccess`
-  - `AmazonS3FullAccess`
+- **EMR_DefaultRole** → service role for EMR cluster.  
+  - Policy: `AmazonEMRServicePolicy_v2`
 
-- **EMR_EC2_DefaultRole** (instance profile for cluster nodes)
-  - `AmazonElasticMapReduceforEC2Role`
-  - `AmazonS3FullAccess`
-  - `CloudWatchLogsFullAccess` (optional)
+- **EMR_EC2_DefaultRole** → attached to EMR EC2 nodes.  
+  - Policies:  
+    - `AmazonS3FullAccess` (for demo)  
+    - `AmazonEC2RoleforEMR`  
 
-> Note: This is a convenient demo setup. In production, replace with least-privilege, bucket-scoped policies.
+⚠️ In production → restrict S3 access to bucket prefixes only.
